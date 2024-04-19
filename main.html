@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header role="banner">
+        <h1 role="heading">Parveen's Portfolio</h1>
+    </header>
 
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <img src="https://cdn.pixabay.com/photo/2024/01/16/10/50/computer-programmer-8511924_960_720.jpg" alt="Image" role="img width=300 height=300">
+        <p>Associate software developer with a B.Tech in Computer Science and Engineering. Actively participating in the Acciojob full-stack development program, I am seeking opportunities to leverage my skills and drive practical excellence in a dynamic professional setting.</p>
+    </section>
+
+    <section id="projects">
+        <h2 role="heading">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project1: Airline reservation system</li>
+            <li role="listitem">Project2: Blog website</li>
+            <li role="listitem">Project3: Student management system</li>
+        </ul>
+    </section>
+
+    <footer role="contactntinfo">
+        <p>Contact me at: email@example.com</p>
+    </footer>
 </body>
-
 </html>
